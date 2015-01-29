@@ -25,7 +25,6 @@ public class DbConnection {
 	public Connection getConnection()
 	{
 		try {
-//			Class.forName("com.ibm.db2.jcc.DB2Driver").newInstance();
 			Class.forName("com.mysql.jdbc.Driver").newInstance();
 		
 			//For Amazon EC2 Access

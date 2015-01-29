@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AskMe_Android</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_answer">AnswerActivity</string>
+    <string name="title_activity_post_question">PostQuestionActivity</string>
+    <string name="title_activity_post_answer">PostAnswerActivity</string>
+
+</resources>

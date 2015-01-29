@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.kks24.askme_android.QuestionActivity" android:baselineAligned="false">
+
+    <Button
+        android:id="@+id/button_postQn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text=" Post Your Question " />
+    
+    <ListView
+        android:id="@+id/question_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button_postQn"
+        android:layout_weight="3"
+        android:gravity="top" >
+
+    </ListView>
+
+</LinearLayout>

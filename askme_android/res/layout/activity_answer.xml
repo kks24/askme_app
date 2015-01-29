@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.kks24.askme_android.AnswerActivity" >
+    
+    <TextView
+        android:id="@+id/squestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Question :"
+        android:textSize="18sp"/>
+    
+    <TextView
+        android:id="@+id/squestionTitle"
+        android:layout_below="@+id/squestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="title"
+        android:textSize="18sp"/>
+    
+    <TextView
+        android:id="@+id/squestionPostedBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/squestionTitle"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Posted By: "
+        android:textSize="12sp" />
+    
+    <TextView
+        android:id="@+id/squestionContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/squestionPostedBy"
+        android:gravity="center_vertical"
+        android:text="content"
+        android:textSize="15sp"/>
+    
+    <ListView
+        android:id="@+id/answer_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/squestionContent"
+        android:layout_weight="3"
+        android:gravity="bottom" >
+
+    </ListView>
+    
+    <Button
+        android:id="@+id/button_postAns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer_list"
+        android:layout_marginTop="5dp"
+        android:text=" Post Your Answer " />
+    
+    </LinearLayout>

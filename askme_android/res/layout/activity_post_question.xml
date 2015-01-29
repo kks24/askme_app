@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.kks24.askme_android.PostQuestionActivity" >
+    
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Question Title" />
+    
+   <EditText
+        android:id="@+id/editText_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_title"
+        android:ems="10"
+        android:hint="Title" >
+        
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_qndetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_fname"
+        android:layout_below="@+id/editText_title"
+        android:layout_marginTop="14dp"
+        android:text="Question Details:" />
+
+    <EditText
+        android:id="@+id/editText_qncontent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_qndetails"
+        android:ems="10"
+        android:hint="Write your question here" />
+    
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_qncontent"
+        android:layout_below="@+id/editText_qncontent"
+        android:layout_marginTop="15dp"
+        android:text="Your name to display" />
+
+    <EditText
+        android:id="@+id/editText_qnname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_name"
+        android:ems="10"
+        android:hint="Display Name"/>
+
+    <Button
+        android:id="@+id/button_submitQn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_qnname"
+        android:layout_marginTop="5dp"
+        android:text=" Post Your Question " />
+
+</RelativeLayout>

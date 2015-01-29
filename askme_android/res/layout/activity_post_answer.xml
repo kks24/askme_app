@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.kks24.askme_android.PostAnswerActivity" >
+
+    <TextView
+        android:id="@+id/textView_ansdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Your Answer:" />
+
+    <EditText
+        android:id="@+id/editText_anscontent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_ansdetails"
+        android:ems="10"
+        android:hint="Write your Answer here" />
+    
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_anscontent"
+        android:layout_marginTop="15dp"
+        android:text="Your name to display" />
+
+    <EditText
+        android:id="@+id/editText_ansname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_name"
+        android:ems="10"
+        android:hint="Display Name"/>
+
+    <Button
+        android:id="@+id/button_submitAns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/editText_ansname"
+        android:layout_marginTop="5dp"
+        android:text=" Post Your Answer " />
+
+</RelativeLayout>

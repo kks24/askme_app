@@ -45,7 +45,7 @@ public class AnswerManager {
 	}
 	
 	public boolean createAnswer(Answer answer) {
-		String sql = "INSERT INTO ASKME_DB.question (answer_content,answer_date,answer_postedby,question_id) VALUES(?, ?, ?, ?)";
+		String sql = "INSERT INTO `askme_db`.`answer` (`answer_content`, `answer_date`, `answer_postedby`, `question_id`) VALUES (?, ?, ?, ?)";
 
 		try { 
 			Connection conn = DbConnection.getInstance().getConnection();
